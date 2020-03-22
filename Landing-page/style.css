@@ -61,6 +61,7 @@ header{
     
 }
 
+
 .header-text{
     display: flex;
     flex-direction: column;
@@ -217,23 +218,66 @@ header{
 
 
 .design-section-1{
-    display: grid;
+    display: flex;
+    justify-content: center;
+    margin-top: 5em;
     
 }
 
 .design-image{
-    width: 70%;
+    position: relative;
+    width: 500px;
+    margin: 20px;
+    
     
 }
 
-.design-info{
-   
+.design-image h1{
+    position: absolute;
+    top: 30px;
+    margin-left: 30px;
+    font-size: 25px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: rgb(219, 40, 40);
+    
+    
 }
 
-.design-image img{
+
+
+.design-info{
+    max-width: 500px;
+    margin-top: 50px;
+
+}
+
+.design-info h2{
+    text-transform: uppercase;
+    color: rgb(60, 200, 255);
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+.design-info p{
+    margin-top: 20px;
+}
+
+#last-word{
+    color: rgb(68, 228, 68);
+}
+
+#info-photo{
+    width:100%;
+    height: 100%;
+    position: relative;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+.team-section img{
     width: 100%;
 }
-
 
 .photos img{
   width: 18%;
@@ -245,6 +289,14 @@ header{
     flex: 1 0 21%;
     flex-wrap: wrap;
     width: 100%;
+}
+
+.branch{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
 }
 
 .heading-section .fa-angular{
@@ -269,4 +321,169 @@ header{
 
 .heading-section .fa-bootstrap{
     color: purple;
+}
+
+.icon{
+    font-size: 4rem;
+    color: #fff;
+    text-align: center;
+    align-items: center;
+    padding: 3rem;
+}
+
+
+.contact-us{
+    margin-top: 3rem;
+}
+
+.contact{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1rem;
+    justify-items: space-around;
+    
+     
+}
+
+.message-form{
+    text-align: center;
+}
+
+.send{
+    margin-right: 1rem;
+}
+
+
+.contact-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.info-header{
+    font-size: 2rem;
+    text-transform: capitalize;
+     
+}
+
+.info-icon{
+    font-size: 2rem;
+    margin-top: 1rem;
+    margin-right: 1rem;
+}
+
+
+
+.input{
+    width: 90%;
+    margin: 2rem auto;
+}
+
+.footer-header{
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'RALEWAY', sans-serif;
+    color: #fff;
+}
+
+.icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-icon{
+    margin: 2rem 1rem;
+    font-size: 1.8rem;
+    color: #fff;
+}
+
+.footer-info{
+    text-align: center;
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+
+@media screen and (max-width: 720px){
+    #para-text p{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .heading-section{
+        flex-direction: column;
+    }
+
+    .design-section-1{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .design-section-1 p{
+        margin-left: 2rem;
+    }
+
+    .design-image{
+        width: 90%;
+    }
+
+    .about-section{
+        flex-direction: column;
+    }
+
+    #about-us{
+        text-align: center;
+    }
+
+    .about-info p{
+        font-size: 0.8rem;
+    }
+    
+    .about-image{
+        margin-top: 2rem;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #about-img{
+        width: 90%;
+        margin-left: 1rem;
+    }
+
+    #icon{
+        padding: 3rem;
+    }
+
+    .icon-select{
+        padding: 3rem;
+    }
+
+    .contact{
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .contact-info{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .info-header{
+        font-size: 2rem;
+    }
+    
+    .info-icon{
+        font-size: 1rem;
+
+    }
 }
