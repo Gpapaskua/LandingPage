@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, inital-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
@@ -29,6 +29,11 @@
                     <li><a href="">contacts</a></li>
                 </ul>
             </div>
+            
+            
+        </div>
+        <div class="burger">
+            <i class="fas fa-bars" id="burger"></i>
         </div>
         <div class="header-text">
             <div id="para-text">
@@ -107,24 +112,13 @@
         <h2>Section heading</h2>
         <p class="text-muted">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
         <ul class="category-list">
-            <li><button class="active">All</button></li>
-            <li><button>Interior</button></li>
-            <li><button>technology</button></li>
-            <li><button>travel</button></li>
-            <li><button>package</button></li>
+            <li><button id="all" class="category-button">All</button></li>
+            <li><button id="interior" class="category-button">Interior</button></li>
+            <li><button id="technology" class="category-button">technology</button></li>
+            <li><button id="travel" class="category-button">travel</button></li>
+            <li><button id="package" class="category-button">package</button></li>
         </ul>
-        <div class="photos">
-            <img src="https://demo.w3layouts.com/demos_new/template_demo/28-07-2018/universe-demo_Free/1957452837/web/images/g1.jpg"
-                alt="">
-            <img src="https://demo.w3layouts.com/demos_new/template_demo/28-07-2018/universe-demo_Free/1957452837/web/images/g2.jpg"
-                alt="">
-            <img src="https://demo.w3layouts.com/demos_new/template_demo/28-07-2018/universe-demo_Free/1957452837/web/images/g3.jpg"
-                alt="">
-            <img src="https://demo.w3layouts.com/demos_new/template_demo/28-07-2018/universe-demo_Free/1957452837/web/images/g4.jpg"
-                alt="">
-            <img src="https://demo.w3layouts.com/demos_new/template_demo/28-07-2018/universe-demo_Free/1957452837/web/images/g5.jpg"
-                alt="">
-        </div>
+        <div class="category-images"></div>
     </section>
 
     <section class="design-section">
@@ -290,4 +284,6 @@
         <p class="footer-info"><i class="far fa-copyright"></i>2018. Universe. All rights reserved | Design by W3layouts</p>
         
     </div>
-</body>
+    <script src="app.js"></script>
+    </body>
+</html> 
