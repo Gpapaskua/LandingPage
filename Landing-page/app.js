@@ -5,7 +5,9 @@ let package = document.querySelector("#package");
 let all = document.querySelector("#all");
 let categoryImages = document.querySelector(".category-images");
 let allButtons = document.querySelectorAll(".category-button");
-
+let counterDiv = document.querySelector(".branch");
+let counters = document.querySelectorAll(".counter");
+const speed = 200;
 
 
 let data = 
@@ -127,4 +129,37 @@ allButtons.forEach(function(elem) {
     categoryImages.appendChild(newDiv);
     }});
 });
-     
+
+let isInViewport = function (elem) {
+    let bounding = elem.getBoundingClientRect();
+    return (
+        bounding.top >= 0 &&
+        bounding.left >= 0 &&
+        bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        bounding.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+}
+
+window.addEventListener('scroll', function (event) {
+    if(isInViewport(counterDiv)){
+    updateCounter();
+    }
+}, false);
+let updateCounter = () =>{
+counters.forEach(counter =>{
+    const updateCount = () =>{
+        const target = +counter.getAttribute('data-target');
+        const count = +counter.innerText;
+        const inc = target / speed;
+        if(count < target){
+            counter.innerText = Math.ceil(count + inc);
+            setTimeout(updateCount, 1);
+        }
+        else{
+            count.innerText = target;
+        }
+    }
+    updateCount();
+})
+}
+

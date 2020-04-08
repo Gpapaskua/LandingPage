@@ -320,6 +320,10 @@ button:focus {
     align-items: center;
 }
 
+.counter{
+    font-size: 2rem;
+}
+
 .heading-section .fa-angular{
     color: red;
 }
@@ -509,25 +513,6 @@ button:focus {
     }
 }
 
-
-
-@media screen and (max-width: 1300px){
-    .nav-items{
-        display: none;
-    }
-
-    .logo{
-        position: absolute;
-        margin: 0;
-        top: 5%;
-    
-    }
-
-    .burger{
-        display: block;
-        position: absolute;
-        top: 5%;
-        right: 5%;
-        
-    }
+@media screen and (max-width: 700px){
+   
 }
